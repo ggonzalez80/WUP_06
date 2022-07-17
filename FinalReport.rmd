@@ -69,7 +69,7 @@ basicCC <- ggplot(dd2,aes(x=race,y=prcnt*100,fill=cappun))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
-
+According to the bar plot, the race of a person is affected to the way they view capital punishment. The graph shows that the white people prefer the capital punishment and black strongly disagree with it.
 
 ### Numerical Descriptive Results
 
@@ -86,12 +86,12 @@ rowPerc(table2)
 colPerc(table2)
 ```
 
+White seem to support the cappun much more than blacks and other by a significant margin. 
 
 ## Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
-`
 
 
 ## More data version
@@ -103,6 +103,8 @@ fisher.test(table2)
 #fisherXY(mydata$race,mydata$cappun)
 ```
 
+The p-value for the Chi-squared text was 0. Bunch of 0's 1 this quite small so we reject the null hypothesis.
+
 ```{r}
 fisherXY(mydata$cappun,mydata$race)
 ```
@@ -112,7 +114,7 @@ fisherXY(mydata$cappun,mydata$race)
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
 
-
+At the end of the survey, attitude does base on towards race because in thee graph and the results it shows white having the most attention than the blacks.
 
 
 
